@@ -1,12 +1,29 @@
-package Week1.MastermindGame
+package Week2.MastermindGame
 
-fun main(){
+fun main() {
     println(evaluateGuess("ABCD", "AACC"))
 }
 
-data class Evaluation(var rightPosition: Int, val wrongPosition: Int)
 
-fun evaluateGuess(secret: String, guess: String): Evaluation {
+data class Evaluation(val rightPosition: Int, val wrongPosition: Int)
+
+// Functional Way
+fun evaluateGuess(codeMakerWord: String, codeBreakerWord: String): Evaluation {
+    val rightPosition = codeMakerWord.zip(codeBreakerWord).count{ it.first == it.second }
+    val commonLetters = "ABCDEF".sumBy { ch ->
+        Math.min(codeMakerWord.count{ it == ch}, codeBreakerWord.count{ it == ch})
+    }
+
+    return Evaluation(
+        rightPosition = rightPosition,
+        wrongPosition = (commonLetters - rightPosition)
+    )
+}
+
+
+
+// Longer Solution
+fun evaluateGuess1(secret: String, guess: String): Evaluation {
     return Evaluation(
         rightPosition = countSameLattersOnSamePosition(secret, guess),
         wrongPosition = countCommonLetters(secret, guess) - countSameLattersOnSamePosition(secret, guess)

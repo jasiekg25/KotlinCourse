@@ -1,11 +1,11 @@
-package Week1.task2
+package Week2.task2
 
 
 //  Change the 'sum' function so that it was declared as an extension to List<Int>.
 
-fun List<Int>.sum(list: List<Int> = this): Int {
+fun List<Int>.sum(): Int {
     var result = 0
-    for (i in list) {
+    for (i in this) {
         result += i
     }
     return result

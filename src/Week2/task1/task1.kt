@@ -1,4 +1,4 @@
-package Week1.task1
+package Week2.task1
 
 /*
 Implement the function that checks whether a string is a valid identifier. A valid identifier is a non-empty string that
@@ -6,18 +6,11 @@ starts with a letter or underscore and consists of only letters, digits and unde
  */
 
 fun isValidIdentifier(s: String): Boolean {
-
-    if (s.isEmpty()) return false
-
-    if (s[0].toInt() !in 97..122 &&
-        s[0].toInt() !in 65..90 &&
-        s[0].toInt() != 95) return false
-
-    for (char in s.substring(1)){
-        if (char.toInt() !in 97..122 &&
-            char.toInt() !in 65..90 &&
-            char.toInt() !in 48..57 &&
-            char.toInt() != 95) return false
+    fun isValidCharacter(ch: Char) =
+        ch == '_' || ch in '0'..'9' || ch in 'A'..'Z' || ch in 'a'..'z'
+    if(s.isEmpty() || s[0] in '0'..'9') return false
+    for(ch in s){
+        if (!isValidCharacter(ch)) return false
     }
 
     return true
