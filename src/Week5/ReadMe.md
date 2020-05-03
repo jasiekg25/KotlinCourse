@@ -6,7 +6,6 @@
 
 ## Game Of 15
 ![](../resources/GameOfFifteen.gif)
-
 ___
 
 # Task Description
