@@ -1,4 +1,4 @@
-#Board
+# Board
 
 ###### Your task is to implement interfaces SquareBoard and GameBoard.
 
