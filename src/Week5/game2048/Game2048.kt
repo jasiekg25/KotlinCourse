@@ -1,10 +1,10 @@
-package Week5.games.game2048
+package Week5.game2048
 
 import Week4.Board.Cell
 import Week4.Board.Direction
 import Week4.Board.GameBoard
 import Week4.Board.createGameBoard
-import Week5.games.game.Game
+import Week5.game.Game
 
 
 /*
@@ -16,7 +16,8 @@ import Week5.games.game.Game
 fun newGame2048(initializer: Game2048Initializer<Int> = RandomGame2048Initializer): Game =
     Game2048(initializer)
 
-class Game2048(private val initializer: Game2048Initializer<Int>) : Game {
+class Game2048(private val initializer: Game2048Initializer<Int>) :
+    Game {
     private val board = createGameBoard<Int?>(4)
 
     override fun initialize() {

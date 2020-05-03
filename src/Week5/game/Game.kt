@@ -1,4 +1,4 @@
-package Week5.games.game
+package Week5.game
 
 import Week4.Board.Direction
 

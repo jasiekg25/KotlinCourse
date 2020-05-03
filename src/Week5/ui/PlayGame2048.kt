@@ -1,6 +1,6 @@
-package Week5.games.ui
+package Week5.ui
 
-import Week5.games.game2048.newGame2048
+import Week5.game2048.newGame2048
 import java.awt.Color
 
 
@@ -21,5 +21,8 @@ object Game2048Settings : GameSettings("Game 2048", Color(0xbbada0)) {
 
 
 fun main() {
-    playGame(newGame2048(), Game2048Settings)
+    playGame(
+        newGame2048(),
+        Game2048Settings
+    )
 }

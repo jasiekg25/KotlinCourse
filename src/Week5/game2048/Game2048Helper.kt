@@ -1,4 +1,4 @@
-package Week5.games.game2048
+package Week5.game2048
 
 
 /*

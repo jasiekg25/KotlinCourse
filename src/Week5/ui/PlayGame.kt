@@ -1,9 +1,9 @@
-package Week5.games.ui
+package Week5.ui
 
 
 // drawing based on https://github.com/bulenkov/2048
 import Week4.Board.Direction
-import Week5.games.game.Game
+import Week5.game.Game
 import java.awt.*
 import java.awt.event.KeyAdapter
 import java.awt.event.KeyEvent
@@ -56,7 +56,9 @@ class PlayGame(val game: Game, val settings: GameSettings) : JPanel() {
         val xOffset = offsetCoors(x)
         val yOffset = offsetCoors(y)
         g.color = settings.getBackgroundColor(value)
-        g.fillRoundRect(xOffset, yOffset, TILE_SIZE, TILE_SIZE, 14, 14)
+        g.fillRoundRect(xOffset, yOffset,
+            TILE_SIZE,
+            TILE_SIZE, 14, 14)
         g.color = settings.getForegroundColor(value)
         val size = if (value < 100) 36 else if (value < 1000) 32 else 24
         val font = Font(FONT_NAME, Font.BOLD, size)
