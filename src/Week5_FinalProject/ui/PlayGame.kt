@@ -1,9 +1,9 @@
-package Week5.ui
+package Week5_FinalProject.ui
 
 
 // drawing based on https://github.com/bulenkov/2048
 import Week4.Board.Direction
-import Week5.game.Game
+import Week5_FinalProject.game.Game
 import java.awt.*
 import java.awt.event.KeyAdapter
 import java.awt.event.KeyEvent

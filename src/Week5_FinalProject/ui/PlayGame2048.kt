@@ -1,6 +1,6 @@
-package Week5.ui
+package Week5_FinalProject.ui
 
-import Week5.game2048.newGame2048
+import Week5_FinalProject.game2048.newGame2048
 import java.awt.Color
 
 

@@ -1,9 +1,9 @@
-package Week5.gameOf15
+package Week5_FinalProject.gameOf15
 
 import Week4.Board.Cell
 import Week4.Board.Direction
 import Week4.Board.createGameBoard
-import Week5.game.Game
+import Week5_FinalProject.game.Game
 
 
 /*

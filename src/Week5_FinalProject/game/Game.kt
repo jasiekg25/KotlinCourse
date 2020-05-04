@@ -1,4 +1,4 @@
-package Week5.game
+package Week5_FinalProject.game
 
 import Week4.Board.Direction
 

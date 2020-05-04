@@ -1,10 +1,10 @@
-package Week5.game2048
+package Week5_FinalProject.game2048
 
 import Week4.Board.Cell
 import Week4.Board.Direction
 import Week4.Board.GameBoard
 import Week4.Board.createGameBoard
-import Week5.game.Game
+import Week5_FinalProject.game.Game
 
 
 /*

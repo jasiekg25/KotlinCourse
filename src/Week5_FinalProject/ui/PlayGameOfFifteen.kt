@@ -1,6 +1,6 @@
-package Week5.ui
+package Week5_FinalProject.ui
 
-import Week5.gameOf15.newGameOfFifteen
+import Week5_FinalProject.gameOf15.newGameOfFifteen
 import java.awt.Color
 
 
